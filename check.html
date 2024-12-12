@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change</title>
+</head>
+<body>
+    <input type="text" id="txt"><br>
+   verify <input type="checkbox" id="checkbox"><br>
+    <script>
+        document.getElementById("txt").addEventListener("change",sample);
+        function sample()
+        {
+            console.log("changed");
+        }
+        document.getElementById("checkbox").addEventListener("change",sample2);
+        function sample2()
+        {
+            console.log("changed");
+        }
+    </script>
+</body>
+</html>

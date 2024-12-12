@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse</title>
+    <style>
+        #id
+        {
+            background-color: coral;
+            width: 250px;
+            height:250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="id">Hello</div><br>
+    price:<input type="text" id="txt1"><br>
+   
+    <script>
+        document.getElementById("id").addEventListener("mouseover",sample);
+        function sample()
+        {
+            document.getElementById("id").style.backgroundColor="green";
+        }
+        document.getElementById("id").addEventListener("mouseout",sample2);
+        function sample2()
+        {
+            document.getElementById("id").style.backgroundColor="coral";
+        }
+        document.getElementById("id").addEventListener("mousemove",sample3);
+       // document.getElementById("txt");
+        function sample3(event)
+        {
+            var x=event.pageX+","+event.pageY;
+            var y=document.getElementById("txt1");
+           y.value= x; 
+           z=window.setTimeout(fun,2000);
+        }
+        function fun()
+        {
+           y.remove();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focusblur</title>
+    <style>
+       span{
+        display: none;
+       }
+    </style>
+</head>
+<body>
+    Email:<input type="text" id="text">
+    <span id="span">Use id</span>
+    <script>
+        document.getElementById("text").addEventListener("focus",sample);
+        function sample()
+        {
+            document.getElementById("span").style.display="inline";
+        }
+        document.getElementById("text").addEventListener("blur",sample2);
+        function sample2()
+        {
+            document.getElementById("span").style.display="none";
+        }
+    </script>
+</body>
+</html>

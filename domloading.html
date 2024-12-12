@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domloading</title>
+</head>
+
+<body>
+    <div id="demo">
+        <h2>Hello All</h2>
+        <p>This is loading of dom</p>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const value = document.getElementById("demo");
+            const heading = value.children[0];
+            const para = value.children[1];
+            console.log(value.children[0]);
+            console.log(value.children[1]);
+            heading.innerHTML = `Hello I have updated this line`;
+        })
+       
+         window.addEventListener("unload",() =>{
+            alert("Are you sure to close the tab....");
+         }
+         )
+
+        
+
+    </script>
+</body>
+
+</html>

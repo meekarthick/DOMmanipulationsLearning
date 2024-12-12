@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click</title>
+    <style>
+        #client
+        {
+            height: 200px;
+            width: 250px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <input type="checkbox" id="check" onmouseleave="fun()">
+    <div id="client"></div>
+    </form>
+    <ul id="id">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ul>
+    <div id="div"></div>
+    <div id="attr"></div>
+    <script>
+        function fun()
+        {
+            document.getElementById("check").click();
+        }
+       var element=document.getElementById("client");
+       var text=element.clientHeight;
+       document.getElementById("client").innerHTML=text;
+
+    var text=document.getElementById("id").innerHTML;
+    document.getElementById("div").innerHTML=text;
+
+     var z=document.getElementById("id");
+     var t=z.getAttribute("id");
+     document.getElementById("attr").innerHTML=t;
+    </script>
+</body>
+</html>

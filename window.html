@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <style>
+        body {
+            margin: 0px;
+            height: 5000px;
+        }
+
+        p {
+          
+            padding: 13px;
+            background-color: bisque;
+        }
+
+        #box {
+            padding: 10px;
+
+        }
+
+        #box1:focus {
+           
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="x">para1</p>
+    <p>paara2</p>
+    <p id="y">paara3<span><b>"hello"</b> </span></p>
+    <p class="x">paara4 </p>
+
+    <input type="text" id="box1">
+    <input type="text" id="box2">
+    <input type="text" id="box3">
+    <input type="text" id="box4">
+
+    <h3>Document object model</h3>
+    <img id="myimg" width="300px" height="300px" src="img/img-1.jpg"><br>
+    <button onclick="mywin()">Hello</button>
+    <div id="div">
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima 
+        voluptate laborum pariatur! Molestias dolores nesciunt ut accusantium 
+        minima tenetur voluptates. Odio iusto, hic quam architecto facilis ratione 
+        sint eligendi non!</p>
+    </div>
+    <script>
+        var n=document.createElement("p");
+        n.innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima";
+        n.backgroundColor="orange";
+        document.getElementById("div").appendChild(n);
+        console.log(document.getElementById("myimg").attributes);
+        //console.log(document.getElementById("para").remove());
+        //console.log(document.getElementById("myimg").attributes.length);
+        // console.log(document.getElementById("myimg").attributes.name[1]);
+        //var c = document.getElementById("myimg").hasAttribute("width");
+        //console.log(c);
+        document.getElementById("box1").focus();
+        //var c= document.getElementById("myimg").removeAttribute("width");
+        //console.log(c);
+        //console.log(window.location.href);
+        //window.open("signform.html","x","height=300,width=300");
+        //console.log(document.querySelector(".x"));
+        //document.write("abc");
+        //console.log(document.getElementById("y").innerHTML);
+        //console.log(document.getElementById("y").innerText);
+       // document.getElementById("y").style.backgroundColor = "greenyorange";
+
+        function mywin() {
+            window.scrollTo(0, 900);
+        }
+    </script>
+
+
+</body>
+
+</html>

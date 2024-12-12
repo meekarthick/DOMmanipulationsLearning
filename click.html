@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click event</title>
+    <style>
+        img {
+            margin: 2px;
+        }
+
+        .class1 {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/img5.jpeg" width="100px" height="100px"  >
+    <img src="img/img6.jpeg" width="100px" height="100px">
+    <img src="img/img7.jpeg" width="100px" height="100px">
+    <img src="img/img8.jpeg" width="100px" height="100px">
+    <img src="img/img9.jpeg" width="100px" height="100px"> <br>
+
+    <input type="button" value="Buy" id="btn">
+
+    <script>
+        var img = [{ book: "img/img5.jpeg", price: 12 },
+        { book: "img/img6.jpeg", price: 14 },
+        { book: "img/img7.jpeg", price: 320 },
+        { book: "img/img8.jpeg", price: 45 },
+        { book: "img/img9.jpeg", price: 99 }];
+        var images = document.getElementsByTagName("img");
+        for (let i = 0; i < images.length; i++) {
+            images[i].addEventListener("click", sample);
+        }
+        function sample(event) {
+            event.target.setAttribute("class", "class1")
+        }
+        document.getElementById("btn").addEventListener("click", sample2);
+        function sample2() {
+            var totalprice = 0;
+            var selectedbooks = document.getElementsByClassName("class1");
+            console.log(selectedbooks);
+            for (let i = 0; i < selectedbooks.length; i++) {
+                var currentbook = selectedbooks[i].getAttribute("src");
+                for (let j = 0; j < img.length; j++) {
+                    if (currentbook == img[j].book) {
+                        totalprice = totalprice + img[j].price;
+                    }
+                }
+            }
+            console.log(totalprice);
+        }
+
+    </script>
+</body>
+
+</html>

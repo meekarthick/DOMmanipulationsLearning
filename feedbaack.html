@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 0px;
+            width: 500px;
+        }
+
+        form * {
+            margin: 5px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        form input,
+        textarea ,select{
+            margin: 5px 0px;
+            padding: 5px 10px;
+
+        }
+
+        form button {
+            padding: 5px 10px;
+            background-color: rgb(70, 70, 202);
+            border: none;
+            color: white;
+        }
+
+        form label {
+            display: flex;
+            align-items: centre;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="demo" onclick="console.log(event)">
+        <h>😋 Food ordering Site</h>
+        <span style="background-color: #fff; border-radius: 4px;"><a href="about.html"
+                style="color: black; text-decoration: none; padding:5px; margin: 5px; ">Credits</a></span>
+        <span style="background-color: #fff; border-radius: 4px;"><a href="feedback.html"
+                style="color: black; text-decoration: none; padding:5px; margin: 5px; ">Feedback</a></span>
+    </header>
+
+
+    <main>
+
+        <form name="feedbackform">
+            <div>
+                <input type="text" placeholder="Enter your name" class="inputbox" name="input">
+            </div>
+
+            <div class="d-flex" id="input-cat">
+                <div class="d-flex">
+                    <input type="radio" id="labling" name="type" value="General">
+                    <label for="labling">General</label>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" id="labling2" name="type" value="Technical">
+                    <label for="labling2">Technical</label>
+                </div>
+                <div class="d-flex">
+                    <input type="radio" id="labling3" name="type" value="Others">
+                    <label for="labling3">Others</label>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="mail">
+                    <input type="email" placeholder="some@gmail.com" name="mail" autocomplete="off">
+                </div>
+
+                <div>
+                    <select name="selectTag" id="selTag" >
+                        <option value="">--select country--</option>
+                        <option value="IND" >India</option>
+                        <option value="AUS">Australia</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">England</option>
+                        <option value="CHI">China</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text">
+                <textarea rows="6" name="description">Plase leaave your coment here</textarea>
+            </div>
+
+            <div class="d-flex" id="chkId">
+                <div id="chcbox" class="d-flex">
+                    <input type="checkbox" id="box1" name="validation" value="Biryani">
+                    <label for="box1">Biryani</label>
+                </div>
+            </div>
+
+            <div>
+                <button name="but">Submit</button>
+            </div>
+
+            </div>
+        </form>
+    </main>
+    <script src="radioEl.js"></script>
+
+</body>
+
+</html>

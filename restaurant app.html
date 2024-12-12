@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food site</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="demo" onclick="console.log(event)">
+        <h>😋 Food ordering Site</h>
+        <span style="background-color: #fff; border-radius: 4px;"><a href="about.html" style="color: black; text-decoration: none; padding:5px; margin: 5px; ">Credits</a></span>
+        <span style="background-color: #fff; border-radius: 4px;"><a href="feedbaack.html" style="color: black; text-decoration: none; padding:5px; margin: 5px; ">Feedback</a></span>
+    </header>
+
+    <main id="main">
+
+        <div class="alert">
+            Food order is <strong>Successful!</strong>
+        </div>
+
+
+        <div id="inputContainer">
+            <input type="text" id="inputBox">
+            <button id="inputButton">Order</button>
+        </div>
+
+        <ul id="food-list">
+            <li class="food-items">
+
+                <div>item 2</div>
+
+                <div onclick="removeEvent(event)">
+                    <i class="fa-sharp fa-solid fa-xmark" id="xmark"></i>
+                </div>
+
+            </li>
+
+
+            <li class="food-items">
+
+                <div>item 3</div>
+
+                <div onclick="removeEvent(event)">
+                    <i class="fa-sharp fa-solid fa-xmark" id="xmark"></i>
+                </div>
+
+            </li>
+        </ul>
+        <!-- <button style="margin: 5px; float: right; background-color: crimson; padding: 5px;
+        color: whitesmoke; border-radius: 3px; outline: none; border: none;" class="Btnhide">
+            Hide
+        </button>
+        <div class="input">
+            <input type="text" data-operation="+" data-value="2" id="data">
+            <button class="button">Submit</button>
+        </div>
+        <style>
+            form {
+                background-color: #fff;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            form input {
+                margin: 6px;
+            }
+
+            form button {
+                background-color: rgb(0, 128, 255);
+                color: #fff;
+                padding: 7x;
+                margin: 7px;
+                border: none;
+                border-radius: 4px;
+                height: 30px;
+            }
+        </style>
+
+
+        <form >
+            <input type="text" placeholder="Age">
+            <div>
+                <label for="terms">
+                    <input type="checkbox" id="terms">Accept the <a href="#">terms and conditions</a>
+                </label>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>-->
+
+    </main>
+    <script src="learning.js"></script>
+   
+    <script src="restaurant.js"></script>
+    <script src="looping.js"></script>
+    <script src="learning2.js"></script>
+    <script src="learning4.js"></script>
+</body>
+
+</html>

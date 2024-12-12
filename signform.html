@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Signup form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <form>
+    <div class="card signup">
+      <div class="cardhead">SIGN UP</div>
+      <div class="cardbody">
+
+        <div class="element">
+          <div class="form-lable"><label for="email">Email</label></div>
+          <div class="container"><input type="email" placeholder="Email" autocomplete="off"  
+            required="required" class="form-box" id="email" name="email"></div>
+        </div>
+
+        <div class="element">
+          <div class="form-lable"><label for="pass" >pass</label></div>
+            <div class="container"><input type="password" class="form-box" id="pass" name="email"></div>
+      </div>
+      <div class="element">
+        <div class="form-lable"><label for="city">city</label></div>
+          <div class="container"><input type="text" min="0" placeholder="Email"  
+            required="required" class="form-box" id="city" list="cities" name="email"></div>
+          <datalist id="cities">
+            <option value="Hydr abad"></option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Pune</option>
+          </datalist>
+    </div>
+    <div class="element">
+      <div class="form-lable"><label for="date">Date</label></div>
+        <div class="container"><input type="date"  class="form-box" id="date" name="email"></div>
+  </div>
+  <div class="element">
+    <div class="form-lable"><label for="dt">city</label></div>
+      <div class="container"><input type="datetime-local" class="form-box" id="dt" name="email"></div>
+</div>
+<div class="element">
+  <div class="form-lable"><label for="profile">Experience in year</label></div>
+    <div class="container"><input type="search"  placeholder="Email" class="form-box" id="profile" name="email"></div>
+</div>
+<div class="element">
+  <div class="form-lable"><label for="gender">Gender</label></div>
+    <div class="container">
+   
+      <input type="radio"  id="Male" name="gender">
+      <label for="Male">Male</label>
+      <input type="radio"  id="Female" name="gender">
+      <label for="Female">Female</label>
+      <input type="radio" id="others" name="gender">
+      <label for="others">others</label>
+    </div>
+</div>
+
+   </div>
+   <div class="foot" >
+    <button type="submit" class="button">Submit</button>
+    <button type="reset" class="btn-reset">Clear</button>
+  </div>
+  </form>
+</body>
+</html>

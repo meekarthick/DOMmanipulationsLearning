@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<div id="demo" style="background-color: aquamarine;" onmouseout="this.innerHTML +=1"></div>
+
+<script>
+var x=document.createDocumentFragment();
+for(let i=0;i<10;i++)
+{
+    x.append(i);
+}
+document.getElementById("demo").appendChild(x);
+</script>
+</body>
+</html>
